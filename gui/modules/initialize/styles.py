@@ -295,8 +295,26 @@ QProgressBar::chunk {
     background-color: rgba(132, 132, 132, 0.5);
     border-radius: 5px;
 }
-"""
 
+QDateTimeEdit
+{
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(48, 48, 48, 0);
+    background-color: rgba(36, 36, 36, 0);
+    font: 10pt "Segoe UI";
+}
+
+QDateTimeEdit::drop-down {
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(48, 48, 48, 0);
+    background-color: rgba(36, 36, 36, 0);
+    font: 10pt "Segoe UI";
+}
+"""
 
 centralwidget_g = """
 QWidget {
@@ -594,5 +612,315 @@ QProgressBar {
 QProgressBar::chunk {
     background-color: #848484;
     border-radius: 5px;
+}
+
+QDateTimeEdit
+{
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #303030;
+    background-color: #242424;
+    font: 10pt "Segoe UI";
+}
+
+QDateTimeEdit::drop-down {
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #303030;
+    background-color: #242424;
+    font: 10pt "Segoe UI";
+}
+"""
+
+centralwidget_h4ck3r = """
+QWidget {
+    background-color: black;
+    border-color: green;
+    color: green;
+    font: 10pt "Segoe UI";
+}
+
+QScrollBar:vertical,
+QScrollBar:horizontal {
+    background: #1e1e1e;
+}
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal {	
+    background-color: black;
+}
+QScrollBar::handle:vertical:hover,
+QScrollBar::handle:vertical:pressed,
+QScrollBar::handle:horizontal:hover,
+QScrollBar::handle:horizontal:pressed {	
+    background-color: #080808;
+}
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:vertical,
+QScrollBar::up-arrow:vertical,
+QScrollBar::down-arrow:vertical {
+    height: 0px;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical, 
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal,
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+QPushButton {
+    color: green;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #080808;
+}
+QPushButton:hover {
+    border-width: 2px;
+    background-color: #323232;
+}
+QPushButton:pressed {
+    background-color: #262728;
+}
+QPushButton:disabled {
+    background-color: #434343;
+    border-color: #0000;
+}
+
+QLineEdit, QTextBrowser, QPlainTextEdit, QTextEdit {
+    border-width: 1px;
+    border-style: solid;
+    background-color: #080808;
+    font: 10pt "Segoe UI";
+}
+
+QListWidget, QListView, QTreeView {
+    border-width: 1px;
+    border-style: solid;
+    background-color: #080808;
+    font: 10pt "Segoe UI";
+}
+QListWidget:item, QListView:item, QTreeView:item {
+    selection-color: green;
+}
+QListWidget:item:hover, QListView:item:hover, QTreeView:item:hover {
+    background-color: #00cc03;
+}
+QListWidget:item:selected, QListView:item:selected, QTreeView:item:selected {
+    background-color: #777777;
+}
+
+QTreeView::branch:has-children:closed {
+    image: url(":/img/img/down.svg");
+}
+
+QTreeView::branch:has-children:open {
+    image: url(":/img/img/up.svg");
+}
+
+QComboBox
+{
+    border-width: 1px;
+    border-style: solid;
+    background-color: #080808;
+    color: green;
+}
+QComboBox::disabled
+{
+    background-color: #434343;
+    color: #656565;
+    border-color: #434343;
+}
+QComboBox:hover
+{
+    background-color: #323232;
+}
+QComboBox:on
+{
+    background-color: #434343;
+}
+QComboBox QAbstractItemView
+{
+    background-color: #434343;
+    color: green;
+    selection-background-color: #777777;
+    selection-color: white;
+    outline: 0;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    border-radius: 6px; 
+}
+
+QTabBar::tab
+{
+    background-color: #080808;
+    color: green;
+    border-style: solid;
+    border-width: 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 5px;
+}
+QTabBar::tab:disabled
+{
+    background-color: #656565;
+    color: green;
+}
+QTabWidget::pane 
+{
+    background-color: #a0a0a0;
+    color: green;
+    border: 1px solid;
+    border-color: green;
+}
+QTabBar::tab:selected
+{
+    background-color: #080808;
+    color: green;
+    border-style: solid;
+    border-width: 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 5px;
+}
+QTabBar::tab:selected:disabled
+{
+    background-color: #080808;
+    color: green;
+}
+QTabBar::tab:!selected 
+{
+    background-color: #080808;
+}
+QTabBar::tab:!selected:hover 
+{
+    background-color: #323232;
+}
+QTabBar::tab:top:!selected 
+{
+    margin-top: 3px;
+}
+QTabBar::tab:bottom:!selected 
+{
+    margin-bottom: 3px;
+}
+QTabBar::tab:top, QTabBar::tab:bottom 
+{
+    min-width: 8ex;
+    margin-right: -1px;
+    padding: 5px 10px 5px 10px;
+}
+QTabBar::tab:top:selected 
+{
+    border-bottom-color: none;
+}
+QTabBar::tab:bottom:selected 
+{
+    border-top-color: none;
+}
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one 
+{
+    margin-right: 0;
+}
+QTabBar::tab:left:!selected 
+{
+    margin-right: 3px;
+}
+QTabBar::tab:right:!selected
+{
+    margin-left: 3px;
+}
+QTabBar::tab:left, QTabBar::tab:right 
+{
+    min-height: 8ex;
+    margin-bottom: -1px;
+    padding: 10px 5px 10px 5px;
+}
+QTabBar::tab:left:selected 
+{
+    border-left-color: none;
+}
+QTabBar::tab:right:selected 
+{
+    border-right-color: none;
+}
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one 
+{
+    margin-bottom: 0;
+}
+
+QSpinBox {
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #242424;
+    font: 10pt "Segoe UI";
+}
+QSpinBox::up-button {
+    border: none;
+    background: none;
+}
+QSpinBox::down-button {
+    border: none;
+    background: none;
+}
+
+QToolBox::tab {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+QSlider::groove:horizontal {
+    border-radius: 1px;
+    height: 10px;
+    margin: 0px;
+    background-color: #242424;
+}
+QSlider::groove:horizontal:hover {
+    background-color: #303030;
+}
+QSlider::handle:horizontal {
+    background-color: white;
+    border: none;
+    width: 5px;
+    border-radius: 40px;
+}
+QSlider::handle:horizontal:hover {
+    background-color: #bfbfbf;
+}
+QSlider::handle:horizontal:pressed {
+    background-color: #bfbfbf;
+}
+
+QProgressBar {
+    text-align: center;
+    color: #00cc00;
+    border-width: 1px; 
+    border-style: inset;
+    background-color: #080808;
+}
+QProgressBar::chunk {
+    background-color: green;
+}
+
+QDateTimeEdit
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+    font: 10pt "Segoe UI";
+}
+
+QDateTimeEdit::drop-down {
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+    font: 10pt "Segoe UI";
 }
 """

@@ -1,3 +1,5 @@
 wheel
 PySide6
 pyinstaller
+lxml
+ezzthread
