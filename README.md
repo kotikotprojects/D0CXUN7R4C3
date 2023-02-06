@@ -3,7 +3,7 @@
 # DOCXUNTRACE
 Ultimate and powerful util to spoof .docx (and other .*x MS Office files) private properties, such as author name,
 creation and save date, words, pages and other data, that cannot be changed from `Properties` tab in explorer.
-## [⬇️ Download here](https://github.com/BarsTiger/D0CXUN7R4C3/releases/latest/download/D0CXUN7R4C3.zip)
+## [⬇️ Download here](https://github.com/BarsTiger/D0CXUN7R4C3/releases/latest/download/D0CXUN7R4C3.exe)
 
 # Themes
 Add `1137` somewhere in path to .exe file (or rename it to D0CXUN7R4C31337 or something that contains 1337 to 
