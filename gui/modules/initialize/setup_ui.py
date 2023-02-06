@@ -21,7 +21,7 @@ def on_load(ui: Ui_MainWindow, MainWindow: QtWidgets.QMainWindow):
         QCalendarWidget.VerticalHeaderFormat.NoVerticalHeader
     )
 
-    if sys.executable == 'D0CXUN7R4C31337.exe' or '1337' in sys.argv:
+    if '1337' in sys.executable or '1337' in sys.argv:
         ui.centralwidget.setStyleSheet(styles.centralwidget_h4ck3r)
     else:
         ui.centralwidget.setStyleSheet(styles.centralwidget_g)
