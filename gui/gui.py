@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(400, 570)
+        MainWindow.resize(487, 570)
         icon = QIcon()
         icon.addFile(u":/img/img/icon.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -209,26 +209,38 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.pages_box = QSpinBox(self.pages_words_symbols_widget)
         self.pages_box.setObjectName(u"pages_box")
+        self.pages_box.setMinimum(-2147483647)
+        self.pages_box.setMaximum(2147483647)
+        self.pages_box.setValue(0)
 
         self.horizontalLayout_2.addWidget(self.pages_box)
 
         self.words_box = QSpinBox(self.pages_words_symbols_widget)
         self.words_box.setObjectName(u"words_box")
+        self.words_box.setMinimum(-2147483647)
+        self.words_box.setMaximum(2147483647)
 
         self.horizontalLayout_2.addWidget(self.words_box)
 
         self.symbols_box = QSpinBox(self.pages_words_symbols_widget)
         self.symbols_box.setObjectName(u"symbols_box")
+        self.symbols_box.setMinimum(-2147483647)
+        self.symbols_box.setMaximum(2147483647)
 
         self.horizontalLayout_2.addWidget(self.symbols_box)
 
         self.lines_box = QSpinBox(self.pages_words_symbols_widget)
         self.lines_box.setObjectName(u"lines_box")
+        self.lines_box.setMaximumSize(QSize(16777215, 16777215))
+        self.lines_box.setMinimum(-2147483647)
+        self.lines_box.setMaximum(2147483647)
 
         self.horizontalLayout_2.addWidget(self.lines_box)
 
         self.paragraphs_box = QSpinBox(self.pages_words_symbols_widget)
         self.paragraphs_box.setObjectName(u"paragraphs_box")
+        self.paragraphs_box.setMinimum(-2147483647)
+        self.paragraphs_box.setMaximum(2147483647)
 
         self.horizontalLayout_2.addWidget(self.paragraphs_box)
 
