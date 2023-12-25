@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "d0cxun7r4c3"
+version = "0.1.0"
+description = ""
+authors = ["hhh"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+pyside6 = "^6.6.1"
+pyinstaller = "^6.3.0"
+lxml = "^4.9.4"
+ezzthread = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
